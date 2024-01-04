@@ -1,0 +1,66 @@
+---
+import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="About Malhar">
+  <main class="text-white lg:text-2xl text-md p-4">
+    <h1 class="xl:text-5xl text-4xl text-center mb-10">About</h1>
+    <div class="grid md:grid-cols-4 grid-cols-3 items-center lg:gap-8 gap-4">
+      <div class="flex flex-row items-center justify-end min-w-22 max-h-22">
+        <a
+          href="/"
+          class="animate-border inline-block rounded-full bg-white bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-[length:400%_400%] p-2"
+        >
+          <img
+            transition:name="profile-pic"
+            src="/profile_pic.jpg"
+            class="float-end min-w-24 max-h-24 opacity-95 rounded-full"
+            alt="Profile_Pic"
+          />
+        </a>
+      </div>
+
+      <div class="md:col-span-3 col-span-2">
+        <p>
+          Thanks for stopping by. My story unfolds here with below cureted
+          words.
+        </p>
+      </div>
+    </div>
+    <div
+      class="xl:mt-20 mt-8 grid xl:grid-cols-6 grid-cols-1 gap-4 items-center justify-items-center"
+    >
+      <div>
+        <h2 class="xl:text-3xl text-2xl font-bold">Back Ground</h2>
+      </div>
+      <div class="xl:col-span-5">
+        <Card
+          year="2022"
+          companyName="IPD Analytics"
+          role="Full Stack Developer"
+          jobDescription="Analyzing, Designing, Developing and Integrating scalable web applications by writing and testing code using React, GraphQL, node, postgresql. Working on both the client and server sides, acting as a bridge between the two."
+        />
+        <Card
+          year="2018"
+          companyName="Barclays Technologies PVT LTD."
+          role="Assistant Vice President"
+          jobDescription="Analyzing, Designing, Developing and Integrating scalable web applications by writing and testing code. Experience in developing application using React, GraphQL, node, postgresql. Can work on both the client and server sides, acting as a bridge between the two."
+        />
+        <Card
+          year="2016"
+          companyName="Sears Technologies"
+          role="Tech Lead"
+          jobDescription="Analyzing, Designing, Developing and Integrating scalable web applications by writing and testing code. Experience in developing application using React, GraphQL, node, postgresql. Can work on both the client and server sides, acting as a bridge between the two."
+        />
+      </div>
+    </div>
+    <div class="flex justify-center lg:mt-32 mt-20">
+      <button
+        class="content-center bg-indigo-500 hover:bg-indigo-400 text-white font-bold py-2 px-4 border-b-8 border-indigo-900 hover:border-indigo-500 rounded-xl"
+      >
+        Connect With Me.
+      </button>
+    </div>
+  </main>
+</Layout>
